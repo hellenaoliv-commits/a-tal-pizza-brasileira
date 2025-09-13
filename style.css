@@ -1,5 +1,4 @@
 /* Container do header */
-header.topo {
    header.topo {
     background: url("pizza.jpg") no-repeat center center;
     background-size: cover;   /* cobre toda a área */
@@ -14,7 +13,6 @@ header.topo {
     color: white;
 }
 
-}
 
 /* Foto pizza */
 header.topo img {
@@ -25,7 +23,7 @@ header.topo img {
 
 }
 
-/* Redes sociais */0
+/* Redes sociais */
 .redes-sociais {
     display: flex;
     gap: 15px;
@@ -84,8 +82,6 @@ body {
     gap: 15px;
 }
 
-}
-
 .barra-titulo h1 {
     text-align: center;
     margin: 0px;
@@ -131,4 +127,5 @@ footer {
 .redes-sociais a.whatsapp {
     color: #25D366 !important;
     text-decoration: none;
+}
 }
