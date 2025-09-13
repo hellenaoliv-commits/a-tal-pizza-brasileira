@@ -2,8 +2,8 @@
    header.topo {
     background: url("pizza.jpg") no-repeat center center;
     background-size: cover;   /* cobre toda a área */
-    width: 100vw;             /* largura total da tela */
-    height: 100vh;            /* altura total da tela */
+    width: 100%; /* largura total da tela */
+    min-height: 500px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,6 +11,7 @@
     justify-content: flex-end; /* desce o conteúdo (título/redes sociais) */
     align-items: center;       /* centraliza horizontalmente */
     color: white;
+      box-sizimg: border-box;
 }
 
 
@@ -59,17 +60,18 @@ body {
 
 .barra-titulo {
 
-    position: relative;
-    display: flex;                /* flex no lugar do grid */
-    justify-content: space-between; /* título à esquerda, ícones à direita */
-    align-items: center;          /* centraliza verticalmente */
-    background-color: #D84315;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 20px auto;
-    width: 95%;
-    box-sizing: border-box;
-    text-align: center;
+   display: flex; 
+   flex-direction: row;
+   justify-content: space-between; /* título à esquerda, ícones à direita */
+   align-items: center;          /* centraliza verticalmente */
+   background-color: #D84315;
+   padding: 10px 20px;
+   border-radius: 5px;
+   width: 95%;
+   max-width: 1200px;
+   margin: 20px auto;
+   box-sizing: border-box;
+
 }
 
 .barra-titulo h1 {
@@ -103,9 +105,10 @@ img {
 }
 
 .galeria img {
-    width: 420px; /* ajusta o tamanho da imagens*/
-    height: auto; /*matem proporçao*/
-    border-radius: 10px; /*cantos arredondados*/
+   display: flex;
+   justify-content: center;
+   gap: 10%;
+   flex-wrap: wrap;
 }
 
 footer {
@@ -129,3 +132,4 @@ footer {
     text-decoration: none;
 }
 }
+
