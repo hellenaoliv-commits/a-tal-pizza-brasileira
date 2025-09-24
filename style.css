@@ -69,7 +69,7 @@ body {
 img {
     display: block;
     margin: 0%;
-    max-width:100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -132,6 +132,7 @@ footer {
     color: white;
      text-decoration: none; 
 }
+
 
 
 
